@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Naor Zamir</title>
+<meta name="description" content="Naor Zamir: AI / ML developer with a passion for technology, finance &amp; science.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<meta property="og:title" content="Naor Zamir">
+<meta property="og:description" content="AI / ML developer with a passion for technology, finance &amp; science.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://naorzam53209.github.io/">
+<link rel="icon" href="avatar.svg" type="image/svg+xml">
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+
+/* Layout: one plain text column, run-in bold headings, bullet lists. Nothing else. */
+:root {
+  --bg: #ffffff;
+  --fg: #000000;
+  --muted: #000000;
+  --link-line: #9a9a9a;
+  --mark-bg: #f2f2f2;
+  --mark-fg: #000000;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+/* Single light look on purpose: black text on white, in every theme. */
+
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 15.5px; line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 900px; margin: 0 0 0 10vw;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+  padding-block: 64px 80px;
+}
+
+a { color: inherit; text-decoration: underline; text-decoration-color: var(--link-line); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+a:focus-visible { outline: 2px solid var(--mark-fg); outline-offset: 2px; border-radius: 3px; }
+
+.head { display: flex; align-items: flex-start; gap: 28px; flex-wrap: wrap; }
+h1 { white-space: nowrap; font-size: 2rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1.05; margin: 0; }
+.tagline { display: flex; align-items: center; gap: 12px; margin-top: 8px; min-width: 0; }
+.avatar { width: 56px; height: 56px; flex: none; display: block; border-radius: 14px; }
+.tagline strong { font-weight: 600; font-size: 15.5px; line-height: 1.35; }
+.links { color: var(--muted); margin: 14px 0 26px; }
+
+p { margin: 0 0 18px; }
+.intro { font-style: italic; color: var(--muted); }
+.run { font-weight: 700; }
+section { margin-top: 26px; }
+section > p:first-child { margin-bottom: 10px; }
+ul { margin: 0 0 18px; padding-left: 22px; }
+li { margin: 0 0 10px; padding-left: 4px; }
+li::marker { color: var(--muted); }
+.tags { color: var(--muted); }
+.honest { color: var(--muted); }
+footer { margin-top: 48px; color: var(--muted); font-size: 13.5px; }
+@media (max-width: 600px) { .page { margin-left: 0; } } @media (max-width: 480px) { h1 { font-size: 1.75rem; } .page { padding-block: 40px 64px; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="head">
+    <h1>Naor Zamir</h1>
+    <div class="tagline">
+      <img class="avatar" src="avatar.svg" width="56" height="56" alt="Illustrated portrait of Naor Zamir">
+      <strong>AI / ML developer with a passion for technology, finance &amp; science</strong>
+    </div>
+  </div>
+
+  <p class="links">(<a href="https://www.linkedin.com/in/naor-zamir-045a751b6/" rel="noopener">LinkedIn</a>, <a href="https://github.com/naorzam53209" rel="noopener">GitHub</a>, <a href="https://x.com/naor_zamir" rel="noopener">X</a>)</p>
+
+  <p class="intro">I've been working on AI for the past years, focused on technology innovation.</p>
+
+  <section>
+    <p><strong class="run">AI.</strong> I've worked with ML and deep learning for 5+ years.</p>
+    <ul>
+      <li>Most of my recent time goes into large language models: how they're built, how to fine-tune and optimize them, and how to run open-weight models on everyday hardware</li>
+      <li>I enjoy learning how to build datasets, evaluating models, and figuring out why something isn't working</li>
+      <li>I try to keep up with a field that changes every month, and I'm happy to admit how much there is still to learn</li>
+    </ul>
+  </section>
+
+  <section>
+    <p><strong class="run">Projects.</strong> <a href="https://github.com/naorzam53209/dale-v1" rel="noopener">Dale</a> is a personal assistant I built on a small local model (qwen3.5:9b).</p>
+    <ul>
+      <li>It can read, write and edit documents, and research a topic in depth</li>
+      <li>I also wanted it to book restaurant tables online. That part didn't work. I tried quantization, saving what it learned as reusable skills, better memory and a longer context window, and it still got lost in long multi-step websites</li>
+      <li class="honest">It taught me a lot about where small models hit their limits, and I learned more from the part that failed than from the parts that worked</li>
+    </ul>
+    <p>Smaller things I've built to understand how the pieces fit together:</p>
+    <ul>
+      <li>A GPT-style language model written from scratch, from tokenization and attention to training</li>
+      <li>A Hebrew-language chemistry dataset for training and testing language models</li>
+      <li>An implementation of Reflexion, a method where a model learns from notes on its own mistakes</li>
+      <li>A small framework of my own for running AI assistants with tools and memory</li>
+    </ul>
+  </section>
+
+  <section>
+    <p><strong class="run">Education.</strong> Most of what I know I taught myself.</p>
+    <ul>
+      <li>I've worked through 5+ full university computer science courses from their public lectures, including Stanford CS329Z and Harvard CS50</li>
+      <li>I usually work without big hardware, so I've gotten used to finding practical ways around limits</li>
+    </ul>
+  </section>
+
+  <section>
+    <p><strong class="run">Outside of code.</strong> I've loved technology and building things since I was a kid. I also follow business and startups closely, and one day I'd like to help build a company.</p>
+  </section>
+
+  <section>
+    <p><strong class="run">What I'm looking for.</strong> My next step: a team or role where I can grow, learn from people more experienced than me, and contribute what I already know. If you work on AI and enjoy it as much as I do, I'd love to talk.</p>
+  </section>
+
+  <section>
+    <p><strong class="run">Where you can find me.</strong> <a href="https://www.linkedin.com/in/naor-zamir-045a751b6/" rel="noopener">LinkedIn</a>, <a href="https://github.com/naorzam53209" rel="noopener">GitHub</a>, <a href="https://x.com/naor_zamir" rel="noopener">X</a>, or email at naorzam53209@gmail.com</p>
+  </section>
+
+  <footer>© 2026 Naor Zamir</footer>
+</main>
+</body>
+</html>
